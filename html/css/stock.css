@@ -1,0 +1,109 @@
+/* --- header --- */
+/*#header {
+    background-color: yellow;
+}*/
+#header {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: solid blue 1px;
+    /* → 順番が変わってもブラウザに反映される */
+    /* 順番は何かを見て固定すべき？ */
+}
+
+#header_title {
+    text-align: center;
+}
+
+#header_user {
+    text-align: right;
+}
+
+/* --- nav --- */
+/*
+#nav {
+    background-color: pink;
+    width: 190px;
+    float: left;
+}
+*/
+#nav {
+    width: 190px;
+    float: left;
+    margin-bottom: auto;
+}
+
+#nav ul {
+    margin: 0;
+    padding: 10px;
+    background-color: #ccccff;
+}
+#nav li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+a:hover {
+    color: #990099;
+}
+
+/* --- main --- */
+/* #main {
+    background-color: cyan;
+    width: 700px;
+    float: right;
+} */
+#main {
+    width: 700px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+#main_title {
+    border-bottom:  2px solid blue;
+    border-left: 6px solid blue;
+    padding: 10px 0 0 5px;
+    margin-bottom: 10px;
+}
+
+#main table, #main td, #main th {
+    border: 1px solid blue;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+.num {
+    text-align: right;
+}
+
+.center_elements {
+    text-align: center;
+}
+
+.right_elements {
+    text-align: right;
+}
+
+/* ---footer--- */
+/* #footer {
+    background-color: orange;
+    clear: both; /* nav, main の間の領域もフッターになるため 
+} */
+
+#footer {
+    clear: both;
+    text-align: center;
+    background-color: #ccccff;
+    padding: 5px;
+}
+
+#container {
+    width: 900px;
+    margin: 0 auto 0 auto;
+}

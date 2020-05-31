@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <title>在庫管理</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/stock.css">
+    </head>
+    <body>
+        <div id="container">
+            <!-- ### header ### -->
+            <div id="header">
+                <img src="images/large_logo.gif">
+                <div id="header_title">在庫管理システム</div>
+                <div id="header_user">〇〇様</div>
+            </div>
+
+            <!-- ### nav ### -->
+            <div id="nav">
+                <ul>
+                    <li>メニューを選択</li>
+                    <li><a href="stockList.html">在庫一覧</a></li>
+                    <li><a href="stockList.html">入庫（仕入れ）</a></li>
+                    <li><a href="stockList.html">出庫（消費）</a></li>
+                </ul>
+            </div>
+
+            <!-- ### main ### -->
+            <div id="main">
+                <div id="main_title">在庫一覧</div>
+                <form action="stockList.html" method="POST">
+                    種類の選択 : <select name="type_select">
+                        <option value="0" selected>すべて</option>
+                        <option value="1">パン生地の材料</option>
+                        <option value="2">ドライフルーツ</option>
+                        <option value="3">調味料</option>
+                        <option value="4">和菓子の材料</option>
+                    </select>
+                    <input type="submit" value="切り替え">
+                </form>
+                <table>
+                    <tr>
+                        <th>番号</th>
+                        <th>材料</th>
+                        <th>内容量</th>
+                        <th>種類</th>
+                        <th>個数</th>
+                        <th>備考</th>
+                    </tr>
+                    <tr>
+                        <td class="num">1</td>
+                        <td>薄力粉</td>
+                        <td class="num">25kg</td>
+                        <td>パン生地の材料</td>
+                        <td class="num">3</td>
+                        <td>食パン・バターロール・ピザ向き</td>
+                    </tr>
+                    <tr>
+                        <td class="num">2</td>
+                        <td>薄力粉</td>
+                        <td class="num">25kg</td>
+                        <td>パン生地の材料</td>
+                        <td class="num">4</td>
+                        <td>メロンパンの外生地・クッキー・マフィン</td>
+                    </tr>
+                    <tr>
+                        <td class="num">3</td>
+                        <td>ドライイースト</td>
+                        <td class="num">1kg</td>
+                        <td>パン生地の材料</td>
+                        <td class="num">7</td>
+                        <td>予備発酵なし</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- ### footer ### -->
+            <div id="footer">
+                Copyright © All Right Reserved by JMOOC
+            </div>
+        </div>
+    </body>
+</html>
